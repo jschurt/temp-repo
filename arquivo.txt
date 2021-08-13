@@ -2,11 +2,14 @@ Comando para criar chave ssh usando "Git Bash"
 
  > ssh-keygen -t rsa -f "/c/Users/julio.schurt/.ssh/github" -C 'jschurt@me.com'
 
- > eval "$(ssh-agent -s)"
+=======> FEITO ISSO, COPIAR A CHAVE SSH (ARQUIVO .ssh/github.pub) PARA DENTRO DE ACCOUNT/SETTINGS/SSH and GPG keys no GitHub
 
+Para que a chave possa ser usada, semrpe que eu abrir um novo termnal GibBash, usar os comandos abaixo antes de utilizar o Git
+
+ > eval "$(ssh-agent -s)"
  > ssh-add "/c/Users/julio.schurt/.ssh/github"
 
-=======> FEITO ISSO, COPIAR A CHAVE SSH (ARQUIVO .ssh/github.pub) PARA DENTRO DE ACCOUNT/SETTINGS/SSH and GPG keys no GitHub
+
 
 # Iniciando o git (fazer isso dentro da pasta do projeto onde desejo criar o repositorio git)
 
