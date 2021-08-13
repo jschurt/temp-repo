@@ -1,14 +1,12 @@
 Comando para criar chave ssh usando "Git Bash"
 
-
-
  > ssh-keygen -t rsa -f "/c/Users/julio.schurt/.ssh/github" -C 'jschurt@me.com'
 
  > eval "$(ssh-agent -s)"
 
  > ssh-add "/c/Users/julio.schurt/.ssh/github"
 
-FEITO ISSO, COPIAR A CHAVE SSH (ARQUIVO .ssh/github.pub) PARA DENTRO DE ACCOUNT/SETTINGS/SSH and GPG keys no GitHub
+=======> FEITO ISSO, COPIAR A CHAVE SSH (ARQUIVO .ssh/github.pub) PARA DENTRO DE ACCOUNT/SETTINGS/SSH and GPG keys no GitHub
 
 # Iniciando o git (fazer isso dentro da pasta do projeto onde desejo criar o repositorio git)
 
@@ -16,3 +14,9 @@ FEITO ISSO, COPIAR A CHAVE SSH (ARQUIVO .ssh/github.pub) PARA DENTRO DE ACCOUNT/
 > git config --global user.name "Julio Schurt"
 > git config --global user.email "jschurt@me.com"
 > git remote add origin git@github.com:jschurt/temp-repo.git
+
+# Comandos sempre que houver mudancas nos arquivos
+
+> git add .
+> git commit -m 'Initial'
+> git push origin master
